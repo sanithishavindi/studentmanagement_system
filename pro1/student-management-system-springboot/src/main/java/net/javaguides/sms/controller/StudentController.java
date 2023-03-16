@@ -62,6 +62,7 @@ public class StudentController {
 		existingStudent.setFaculty(student.getFaculty());
 		existingStudent.setDegreeProgram(student.getDegreeProgram());
 		existingStudent.setIntake(student.getIntake());
+		existingStudent.setDob(student.getDob());
 		
 		// save updated student object
 		studentService.updateStudent(existingStudent);

@@ -49,6 +49,7 @@
 					<th> Student Faculty </th>
 					<th> DegreeProgram </th>
 					<th>Intake</th>
+					<th>DOB</th>
 					<th> Actions </th>
 				</tr>
 			</thead>
@@ -60,6 +61,7 @@
 					<td th:text = "${student.faculty}"></td>
 					<td th:text = "${student.degreeProgram}"></td>
 					<td th:text = "${student.intake}"></td>
+					<td th:text = "${student.dob}"></td>
 					<td>
 						<a th:href = "@{/students/edit/{id}(id=${student.id})}"
 						 class = "btn btn-primary">Update</a>

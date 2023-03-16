@@ -29,18 +29,22 @@ public class Student {
 
 	@Column(name = "intake")
 	private String intake;
+
+	@Column(name = "dob")
+	private String dob;
 	
 	public Student() {
 		
 	}
 	
-	public Student(String studenttName, String regno, String faculty, String degreeProgram, String intake) {
+	public Student(String studenttName, String regno, String faculty, String degreeProgram, String intake, String dob) {
 		super();
 		this.studentName = studentName;
 		this.regno = regno;
 		this.faculty = faculty;
 		this.degreeProgram=degreeProgram;
 		this.intake=intake;
+		this.dob=dob;
 	}
 	public Long getId() {
 		return id;
@@ -82,6 +86,16 @@ public class Student {
 	public void setIntake(String intake) {
 		this.intake = intake;
 	}
+
+	public String getDob() {
+		return dob;
+	}
+
+	public void setDob(String dob) {
+		this.dob = dob;
+	}
+
+	
 
 	
 	
